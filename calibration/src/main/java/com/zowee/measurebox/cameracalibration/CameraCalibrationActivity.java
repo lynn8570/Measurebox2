@@ -80,6 +80,7 @@ public class CameraCalibrationActivity extends Activity implements CvCameraViewL
         mOpenCvCameraView = (CameraBridgeViewBase) findViewById(R.id.camera_calibration_java_surface_view);
         mOpenCvCameraView.setVisibility(SurfaceView.VISIBLE);
         mOpenCvCameraView.setCvCameraViewListener(this);
+
     }
 
     @Override
