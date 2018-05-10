@@ -1,2 +1,2 @@
-include ':app'
+include ':calibration', ':facedection', ':colorblob'
 include ':openCVLibrary341'
