@@ -24,10 +24,6 @@ add_library( # Sets the name of the library.
 
 set_target_properties(lib_opencv
                       PROPERTIES IMPORTED_LOCATION
-                      # TODO ${CMAKE_SOURCE_DIR}：表示 CMakeLists.txt的当前文件夹路径
-                      # TODO ${ANDROID_ABI}：编译时会自动根据 CPU架构去选择相应的库
-                      # TODO ABI文件夹上面不要再分层，直接就 jniLibs/${ANDROID_ABI}/
-                      # TODO ${CMAKE_SOURCE_DIR}/src/main/jniLibs/${ANDROID_ABI}/libavcodec-57.so
                       ${CMAKE_SOURCE_DIR}/src/main/jniLibs/${ANDROID_ABI}/libopencv_java3.so)
 
 
